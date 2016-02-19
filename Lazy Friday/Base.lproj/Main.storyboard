@@ -111,15 +111,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-4h-IHa">
-                                <rect key="frame" x="200" y="167" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-4h-IHa">
+                                <rect key="frame" x="20" y="130" width="560" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="364-EY-Ntq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXq-Dr-UXR">
+                                <rect key="frame" x="20" y="218" width="560" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="aJK-mM-czz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HXq-Dr-UXR" firstAttribute="top" secondItem="DOr-4h-IHa" secondAttribute="bottom" constant="16" id="2iE-fW-8mc"/>
+                            <constraint firstItem="DOr-4h-IHa" firstAttribute="top" secondItem="cgP-tz-Asd" secondAttribute="bottom" constant="66" id="41k-Mu-kzh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HXq-Dr-UXR" secondAttribute="leading" id="T4h-0i-vAA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DOr-4h-IHa" secondAttribute="trailing" id="ZRq-cg-sTt"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DOr-4h-IHa" secondAttribute="leading" id="cXG-HF-TJ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HXq-Dr-UXR" secondAttribute="trailing" id="gj5-tb-Zfe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="placeLocationLabel" destination="HXq-Dr-UXR" id="HnC-HS-FXY"/>
+                        <outlet property="placeTitleLabel" destination="DOr-4h-IHa" id="ezS-GK-HQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WT8-MS-08a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

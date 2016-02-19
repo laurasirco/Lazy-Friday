@@ -1,25 +1,5 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
+  - Alamofire (3.2.0)
   - ElasticTransition (2.1.0):
     - MotionAnimation (~> 0.0.5)
   - Font-Awesome-Swift (1.4.5)
@@ -28,12 +8,12 @@ PODS:
     - Font-Awesome-Swift (~> 1.4.3)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.6)
+  - Alamofire (~> 3.0)
   - ElasticTransition
   - STLocationRequest
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   ElasticTransition: 7c04b2ad4323fc4b18475c60f061cf4be7399f00
   Font-Awesome-Swift: 0af30357ab68dbcfa2d211254a5c11a158261112
   MotionAnimation: d9d4060bf4f494dd61bf868b8969a31b1b0b6f2a
