@@ -125,7 +125,12 @@ class PlacesViewController: UIViewController,CLLocationManagerDelegate {
         
         let place = places[Int(randomNumber)] as! NSDictionary
         
-        self.placeLocationLabel.text = (place["location"] as! NSDictionary)["address"] as! String
+        let address = (place["location"] as! NSDictionary)["address"]
+        
+        if address != nil {
+            self.placeLocationLabel.text = address as! String
+        }
+        
         self.placeTitleLabel.text = place["name"] as! String
     }
     
